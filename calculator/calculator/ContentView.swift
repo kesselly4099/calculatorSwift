@@ -19,6 +19,8 @@ struct ContentView: View {
             .edgesIgnoringSafeArea(.all)
             .overlay(VStack {
                 
+                TotalText().foregroundColor(.white)
+                
                 Grid{
                     GridRow{
                         ButtonView(num: "AC",Colo: .white).foregroundColor(.black)

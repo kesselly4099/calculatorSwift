@@ -7,9 +7,13 @@
 
 import SwiftUI
 
+var tex : String = "0"
+
 struct TotalText: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text(tex)
+            .fontDesign(.serif)
+            .foregroundColor(.white).frame(width: 300 ,height: 10,alignment: .bottomTrailing).font(.system(size: 55)).lineSpacing(0).lineLimit(1)
     }
 }
 
