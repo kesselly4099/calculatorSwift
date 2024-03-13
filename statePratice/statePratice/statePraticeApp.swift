@@ -1,15 +1,14 @@
 //
-//  calculatorApp.swift
-//  calculator
+//  statePraticeApp.swift
+//  statePratice
 //
-//  Created by k-square001 on 06/03/24.
+//  Created by k-square001 on 11/03/24.
 //
 
 import SwiftUI
 
-
 @main
-struct calculatorApp: App {
+struct statePraticeApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -7,11 +7,16 @@
 
 import SwiftUI
 
-var tex : String = "0"
+
+
+
 
 struct TotalText: View {
+    
+    @Binding var value: String
+    
     var body: some View {
-        Text(tex)
+        Text(value)
             .fontDesign(.serif)
             .foregroundColor(.white).frame(width: 300 ,height: 10,alignment: .bottomTrailing).font(.system(size: 55)).lineSpacing(0).lineLimit(1)
     }
@@ -19,6 +24,6 @@ struct TotalText: View {
 
 struct TotalText_Previews: PreviewProvider {
     static var previews: some View {
-        TotalText()
+        TotalText(value: .constant("preview"))
     }
 }

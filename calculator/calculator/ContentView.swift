@@ -10,7 +10,10 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var num : Int = 1
+    @State var DisplayText : String = "0"
+    
+    
+    
     
     
     
@@ -19,7 +22,8 @@ struct ContentView: View {
             .edgesIgnoringSafeArea(.all)
             .overlay(VStack {
                 
-                TotalText().foregroundColor(.white)
+                
+                
                 
                 Grid{
                     GridRow{
@@ -50,13 +54,13 @@ struct ContentView: View {
                         ButtonView(num: "8").foregroundColor(.white)
                         ButtonView(num: "9").foregroundColor(.white)
                         ButtonView(num: "*",Colo: .yellow).foregroundColor(.white)
-                       
+                        
                         
                         
                     }
                     
                     GridRow{
-                        ButtonView(num: "0" ,wid: 153).foregroundColor(.white)
+                        ButtonView(num:"0" ,wid: 153).foregroundColor(.white)
                             .gridCellColumns(2)
                         ButtonView(num: ".").foregroundColor(.white)
                         ButtonView(num:"=",Colo: .yellow).foregroundColor(.white)
@@ -68,7 +72,10 @@ struct ContentView: View {
             })
         
     }
+    
 }
+    
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

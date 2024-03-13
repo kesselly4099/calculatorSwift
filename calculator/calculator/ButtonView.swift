@@ -8,15 +8,19 @@
 import SwiftUI
 
 struct ButtonView: View {
-    var num : String = "1"
+   @State var num : String
     var wid : CGFloat = 75
     var Colo: Color = .gray
+   
     var body: some View {
        
         
         Grid{
             GridRow {
                     Button("\(num)"){
+                        
+                       
+                      
                         
                     }.frame(width: wid,height: 70)
                     .background(Colo).clipShape(RoundedRectangle(cornerRadius: 12))
@@ -28,11 +32,11 @@ struct ButtonView: View {
             
             
         }
+        
     }
+    
+    
+    
+   
 }
 
-struct ButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        ButtonView()
-    }
-}
